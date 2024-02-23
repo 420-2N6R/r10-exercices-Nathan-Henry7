@@ -25,7 +25,7 @@ print(f"Q2{60*'_'}")
 # Q2 :
 # On étend le site web pour qu'il fasse affaire au japon
 # On veut mettre le site web à jour pour que tous les prix soit en yen japonais pas défaut (jpy)
-
+print(conv.convertisseur(13))
 #   Q2 - A :
 #   Ajouter une nouvelle fonction au module converter pour convertir le prix du dollar canadien au yen japonais.
 

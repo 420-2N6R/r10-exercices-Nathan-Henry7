@@ -18,3 +18,6 @@ def convert_cad_to_us(amount):      return convert_cad_to_X(amount,"usd")
 def convert_cad_to_eur(amount):     return convert_cad_to_X(amount,"eur")
 def convert_cad_to_btn(amount):     return convert_cad_to_X(amount,"btn")
 
+def convertisseur(montant:int):
+    reponse = convert_cad_to_X(montant, "jpy")
+    return reponse
