@@ -9,6 +9,7 @@ print(f"Q1{60*'_'}")
 # Q1 :
 # On veut pour voir afficher la liste des prix des différents produits en euro.
 
+#euro = fk_rq.get(f"{}")
 #   Q1 - A
 #   Ajouter une fonction au module fakestore_rq qui retourne un une liste de dictionnaires.
 #   chaque dictionnaire contient le nom d'un produit ainsi que son prix

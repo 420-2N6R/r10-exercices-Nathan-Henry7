@@ -12,3 +12,22 @@ def mettre_produit_a_jour(produit:dict,id:int=None):
     response = rq.patch(f"{BASE_URL}/products/{id}",json=produit)
     return response.json()
 
+new_list = []
+liste = []
+dictio = []
+def liste_produits():
+
+    reponse = rq.get(f"{BASE_URL}/products")
+    liste = reponse.json()
+    new_list = []
+    for produits in liste:
+        id = produits['id']
+        titre = produits['title']
+        prix = produits['price']
+        new_dictio = {"id": id,
+                      "titre": titre,
+                       "prix": prix }
+        new_list.append(new_dictio)
+        print(new_list)
+liste_produits()
+
