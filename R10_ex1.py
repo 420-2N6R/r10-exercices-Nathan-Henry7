@@ -10,7 +10,7 @@ print(f"Q1{60*'_'}")
 # On veut pour voir afficher la liste des prix des différents produits en euro.
 reponse = fk_rq.liste_produits
 print(reponse)
-#euro = fk_rq.get(f"{}")
+
 #   Q1 - A
 #   Ajouter une fonction au module fakestore_rq qui retourne un une liste de dictionnaires.
 #   chaque dictionnaire contient le nom d'un produit ainsi que son prix
@@ -19,7 +19,7 @@ print(reponse)
 #   Q1 - B
 #   Appeler cette nouvelle fonction développée en Q1 - A. En utilisant le module converter, 
 #   afficher dans l'invite de commande : le nom de chaque produit et son prix en euro.
-
+euro = conv.convert_cad_to_eur(reponse['prix'])
 
 print(f"Q2{60*'_'}")
 # Q2 :
@@ -31,3 +31,4 @@ print(conv.convertisseur(13))
 
 #   Q2 - B :
 #   En utilisant la fonction "mettre_produit_a_jour" du module fakestore_rq, mettez à jour tous les prix des produits pour qu'ils soient en jpy.
+fk_rq.mettre_produit_a_jour('jpy')
