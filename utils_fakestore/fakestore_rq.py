@@ -23,7 +23,7 @@ def liste_produits():
     for produits in liste:
         id = produits['id']
         titre = produits['title']
-        prix = produits['price']
+        prix =  produits['price']
         new_dictio = {"id": id,
                       "titre": titre,
                        "prix": prix }
